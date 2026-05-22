@@ -1,0 +1,5 @@
+<%= @list.name %>
+<% @list.bookmarks.each do |bookmark| %>
+  <li><%= bookmark.comment %></li>
+  <li><%= bookmark.movie.title %></li>
+<% end %>
